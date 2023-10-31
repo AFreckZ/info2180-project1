@@ -1,0 +1,234 @@
+/* Add your CSS to this file */
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+    margin: 0;
+    text-align: left;
+    font-size: 20px;
+    height: 20px;
+    width: 200px;
+}
+.container nav {
+    text-align: right;
+    width: 400px;
+}
+nav ul{
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    display: inline;
+    margin: 7px;
+}
+nav ul li a:hover{
+    transform: scale(1.1);
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.overview-hero {
+    background-color: rgb(210, 211, 224,1);
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    height: 250px;
+    padding: 50px;
+}
+.overview-hero-text {
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+.overview-hero-text h2{
+    font-size: 30px;
+}
+.overview-hero-text p{
+    width: 500px;
+}
+.learn-about {
+    display: inline;
+}
+.learn-about h2{
+    height: 40px;
+    width: 170px;
+}
+.container2 {
+    max-width: 960px;
+    max-height: 700px;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+}
+.container2 h2{
+    color: #48BB78;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+.card{
+    width: 220px;
+    height: 464.4px;
+    border-color: #E2E8F0;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888; 
+    margin: 10px;
+}
+.card h3{
+    color:#48BB78;
+    font-size: 21px;
+}
+
+.card img{
+    height: 230px;
+    padding: 0;
+}
+.card-body{
+    font-size: 16px;
+}
+.card:hover{
+    transform: scale(1.05);
+ }
+.testing{
+    background-color: rgb(67, 65, 90);
+    height: 350px;
+}
+.testing .container{
+    align-items: center;
+    padding-top: 65px;
+    color: white;
+}
+.testing-desciption {
+    width: 600px;
+}
+.btn{
+    border-radius: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.cta .btn{
+    padding: 10px 20px;
+    border: 2px solid #48BB78;
+    background-color: #48BB78; 
+    cursor: pointer;
+}
+.cta:hover{
+   transform: scale(1.1);
+}
+.stories {
+    display: inline;
+    max-width: 960px;
+}
+.container3{
+    padding-top: 50px;
+    max-width: 960px;
+    max-height: 700px;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+}
+.stories h2{
+    height: 40px;
+    width: 200px;
+}
+article {
+    display: flex;
+}
+.container3 h2{
+    color: #4063d7;
+}
+.container3 img{
+    width: 40%;
+    height: 40%;
+    height: auto;
+    object-fit: fill;
+    padding: 0;
+    clip-path: circle(35% at 50% 50%);
+}
+.article-body a{
+    text-decoration: none;
+    color: #4063d7;
+}
+.article-body a :hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.newsletter {
+    background-color: #48BB78;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.container4 {
+    padding: 20px;
+}
+.container4 h3 {
+    text-align: center;
+}
+.container4 p{
+    height: 48px;
+    width: 480px;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.container4 form {
+    justify-content: space-evenly;
+    width: 370px;
+    display: flex;
+    width: auto;
+}
+.container4 .btn{
+    padding: 12px 20px;
+    border: 2px solid #4063d7;
+    background-color: #4063d7; 
+    cursor: pointer;
+}
+.from-group{
+    padding-right: 400px;
+}
+form input,textarea{
+    background-color: whitesmoke;
+    padding: 20px 65px;
+    border: #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container5{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    color: white;
+    background-color: rgb(67, 65, 90);
+}
