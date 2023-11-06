@@ -4,15 +4,24 @@ document.addEventListener("DOMContentLoaded", function () {
     const messageDiv = document.querySelector(".message");
 
     subscriptionForm.addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent the form from submitting normally
+        e.preventDefault();
 
         const emailInput = document.getElementById("email");
         const email = emailInput.value;
 
-        // Simulate form submission action here
-        // For demonstration purposes, we'll just display a message
-        messageDiv.textContent = `Thank you for subscribing with the email: ${email}`;
-        emailInput.value = ''; // Clear the input field
+        if (isValidEmail(email)) {
+            messageDiv.textContent = `Thank you for subscribing with the email: ${email}`;
+            emailInput.value = '';
+        } else {
+            messageDiv.textContent = "Please enter a valid email address in the @(email company).com format.";
+        }
     });
+
+    function isValidEmail(email) {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[\w-]+\.com$/;
+        return emailRegex.test(email);
+    }
 });
+
+
 
